@@ -12,7 +12,7 @@ if (input.buttonIsPressed(Button.A)) {
 radio.sendNumber(0)
 let 回 = 0
 basic.forever(function () {
-    if (input.acceleration(Dimension.Y) > 2000) {
+    if (input.soundLevel() > 230) {
         回 = 回 + 1
     } else {
         回 = 回 * 0.93
